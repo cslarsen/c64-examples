@@ -10,7 +10,7 @@ default:
 all: $(TARGETS)
 
 %.prg: %.asm
-	acme --cpu 6502 --format cbm --outfile $@ $<
+	acme --cpu 6510 --format cbm --outfile $@ $<
 
 %.d64: %.prg
 	$(C1541) -format foo,id d64 $@ -write $<
