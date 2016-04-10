@@ -19,4 +19,4 @@ all: $(TARGETS)
 	$(X64) $<
 
 clean:
-	rm -f $(TARGETS)
+	rm -f $(TARGETS) *.prg *.d64
