@@ -1,6 +1,6 @@
 !source "basic-loader.asm"
 
-* = $c000
+* = $0900
 sei
 ldx #$00
 

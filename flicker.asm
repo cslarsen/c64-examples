@@ -6,7 +6,7 @@ border = $d021
 
 ; Start address of program
 ; (which the basic loader will jump to)
-* = $c000
+* = $0900
 
 ; Set background and border to black
 ldx #$00
