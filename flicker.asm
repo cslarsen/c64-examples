@@ -1,12 +1,14 @@
-!source "basic-loader.asm"
+!source "basic-boot.asm"
 
 ; Some constant memory addresses
 background = $d020
 border = $d021
 
-; Start address of program
-; (which the basic loader will jump to)
-* = $0900
+; Start address of main program
+start = $0900
+
+; Basic booter
++boot start
 
 ; Set background and border to black
 ldx #$00
