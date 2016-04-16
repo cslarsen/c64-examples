@@ -1,22 +1,14 @@
 !source "basic-boot.asm"
 
-; Some constant memory addresses
-background = $d020
-border = $d021
-
-; Start address of main program
-start = $0900
-
-; Basic booter
-+boot start
++start_at $0900
 
 ; Set background and border to black
 ldx #$00
-stx background
-stx border
+stx bgcol
+stx bocol
 
-; Flicker border and backround
+; Flicker border and background
 .loop
-  inc background
-  inc border
+  inc bgcol
+  inc bocol
   jmp .loop

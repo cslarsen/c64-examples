@@ -1,10 +1,10 @@
-!cpu 6502
-!source "basic-loader.asm"
+;; Sets background and border to black, then loops forever
 
-* = $0900
+!source "basic-boot.asm"
 
-; Set background and border to black, then loop forever
++start_at $0900
+
 ldx #$00
-stx $d021
-stx $d020
+stx bocol
+stx bgcol
 jmp *

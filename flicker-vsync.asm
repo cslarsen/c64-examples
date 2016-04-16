@@ -1,6 +1,7 @@
-!source "basic-loader.asm"
+!source "basic-boot.asm"
 
-* = $0900
++start_at $0900
+
 sei
 ldx #$00
 
@@ -33,8 +34,8 @@ jmp *
   dec $d019
 
   ldx .color
-  stx $d021
-  stx $d020
+  stx bgcol
+  stx bocol
   inx
   stx .color
 
