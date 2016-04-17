@@ -19,6 +19,13 @@ Type `make <filename>` without extension to compile and run it. For example
 color to black and loops forever. You can type `make` again to run another
 example, no need to stop Vice64.
 
+In your browser
+---------------
+
+If you head over to http://vice.janicek.co/c64/ you can upload your d64-files
+and see them in action (although it requires a blazing fast javascript engine
+to run adequately).
+
 Author and License
 ------------------
 Christian Stigen Larsen  
