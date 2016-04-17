@@ -2,7 +2,7 @@
 basic = $0801
 
 ;; Background color
-bgcol = $d020
+bgcol = $d021
 
 ;; Border color
-bocol = $d021
+bocol = $d020
